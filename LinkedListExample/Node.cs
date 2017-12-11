@@ -10,10 +10,22 @@ namespace LinkedListExample
     {
         public Node left;
         public Node right;
-
+        public int value;
         public Node()
         {
 
+        }
+
+        public int GetInitial
+        {
+            get
+            {
+                return value;          
+            }
+            set
+            {
+
+            }
         }
 
         public Node(int initial)
@@ -23,63 +35,7 @@ namespace LinkedListExample
             right = null;
         }
     }
-
-    class Tree
-    {
-        Node top;
-
-        public Tree()
-        {
-            top = null;
-        }
-
-        public Tree(int initial)
-        {
-            top = new Node(initial);
-        }
-
-
-        public void Add(int value)
-        {
-
-            if (top == null)
-            {
-                Node NewNode = new Node(value);
-                top = NewNode;
-                return;
-            }
-            Node currentNode = top;
-            bool added = false;
-            do
-            {
-                if (value < currentNode.value)
-                {
-                    if (currentNode.left == null)
-                    {
-                        Node NewNode = new Node(value);
-                        currentNode.left = NewNode;
-                        added = true;
-                    }
-                    else
-                    {
-                        currentNode = currentNode.left;
-                    }
-                }
-                if (value >= currentNode.value)
-                {
-                    if (currentNode.right == null)
-                    {
-                        Node NewNode = new Node(value);
-                        currentNode.right = NewNode;
-                        added = true;
-                    }
-                    else
-                    {
-                        currentNode = currentNode.right;
-                    }
-                }
-            }
-     }
+}
     
        
     
