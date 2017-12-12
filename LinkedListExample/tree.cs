@@ -63,6 +63,30 @@ namespace LinkedListExample
                 }
             } while (!added);
         }
+
+        public bool Search(int value)
+        {
+            Node currentNode = top;
+            
+            
+                while (currentNode != null)
+                {
+                    if (currentNode.value == value)
+                    {
+                        return true;
+                    }
+                    else if (currentNode.value < value)
+                    {
+                        currentNode = currentNode.right;
+                       
+                    }
+                    else if (currentNode.value > value)
+                    {
+                        currentNode = currentNode.left;
+                    }                
+            }
+            return false;
+        }
     }
 }
     

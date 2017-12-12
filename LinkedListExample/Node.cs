@@ -13,7 +13,7 @@ namespace LinkedListExample
         public int value;
         public Node()
         {
-
+             
         }
 
         public int GetInitial
