@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="MyLL.cs" />
     <Compile Include="Node.cs" />
+    <Compile Include="tree.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
