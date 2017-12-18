@@ -66,8 +66,7 @@ namespace LinkedListExample
 
         public bool Search(int value)
         {
-            Node currentNode = top;
-            
+            Node currentNode = top;           
             
                 while (currentNode != null)
                 {
@@ -77,8 +76,7 @@ namespace LinkedListExample
                     }
                     else if (currentNode.value < value)
                     {
-                        currentNode = currentNode.right;
-                       
+                        currentNode = currentNode.right;                       
                     }
                     else if (currentNode.value > value)
                     {
